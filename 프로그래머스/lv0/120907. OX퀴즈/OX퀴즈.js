@@ -3,11 +3,17 @@ function solution(quiz) {
     
     for(let i=0; i < quiz.length; i++) {
         const item = quiz[i];
-        const itemArr = item.split(' ');
-        const fstNum = Number(itemArr[0]);
-        const op = itemArr[1];
-        const secNum = Number(itemArr[2]);
-        const result = Number(itemArr[4]);
+        // const itemArr = item.split(' ');
+        // const fstNum = Number(itemArr[0]);
+        // const op = itemArr[1];
+        // const secNum = Number(itemArr[2]);
+        // const result = Number(itemArr[4]);
+        const [fstNum, op, secNum, _, result] = item.split(' ').map((v, idx) => {
+            if(idx === 1) {
+                return v;
+            }
+            return Number(v);
+        });
         
         const calResult = op === '+' ? fstNum + secNum : fstNum - secNum;
 
