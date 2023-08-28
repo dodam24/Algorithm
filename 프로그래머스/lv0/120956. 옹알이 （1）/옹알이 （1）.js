@@ -17,3 +17,17 @@ function solution(babbling) {
     })
     return answer;
 }
+
+
+// 참고 - 정규 표현식을 사용한 문제 해결 방법
+
+// function solution(babbling) {
+//   var answer = 0;
+//   const regex = /^(aya|ye|woo|ma)+$/;
+
+//   babbling.forEach(word => {
+//     if (regex.test(word)) answer++;  
+//   })
+
+//   return answer;
+// }
