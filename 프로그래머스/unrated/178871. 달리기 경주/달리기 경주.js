@@ -9,7 +9,7 @@ function solution(players, callings) {
         const currIdx = hash.get(name);
         const front = players[currIdx - 1];
         
-        [players[currIdx], players[currIdx-1]] = [players[currIdx-1], players[currIdx]]
+        [players[currIdx], players[currIdx - 1]] = [players[currIdx - 1], players[currIdx]]
         
         hash.set(name, hash.get(name) - 1);
         hash.set(front, hash.get(name) + 1);
