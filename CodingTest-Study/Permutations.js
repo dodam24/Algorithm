@@ -4,6 +4,7 @@
   // 3. 탐색: DFS(깊이 우선 탐색)를 활용해 탐색 실행
   // 4. 선택 취소: 선택 과정 다시 복구하기 (undo)
 
+
   // 코드 구현
   function permutate(arr) {
     const result = []
@@ -29,6 +30,7 @@
   }
   console.log(permutate(["a", "b", "c"]))
 
+  
 // [
 //   [ 'a', 'b', 'c' ],
 //   [ 'a', 'c', 'b' ],
