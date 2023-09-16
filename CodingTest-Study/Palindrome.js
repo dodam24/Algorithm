@@ -35,7 +35,7 @@ function checkPalindrome(str) {
   const middle = Math.floor(len / 2)  // 길이의 절반값을 구함
 
   for (let i = 0; i < middle; i++) {
-    if(str.charAt(i) !== str.charAt(len - 1 - i)) { // 시작 포인터와 끝 포인터의 글자가 다르면 false 리턴
+    if (str.charAt(i) !== str.charAt(len - 1 - i)) { // 시작 포인터와 끝 포인터의 글자가 다르면 false 리턴
       return false;
     }
   }
