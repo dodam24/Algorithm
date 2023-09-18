@@ -1,4 +1,4 @@
-class HashTable {
+class HashTable { // 해시 테이블 생성
   constructor(size) { // 해시 테이블의 크기를 지정하는 생성자 함수
     this.table = new Array(size)  // 특정 크기의 배열을 생성하여 해시 테이블로 사용
     this.size = size  // 해시 테이블의 크기를 저장
@@ -22,9 +22,9 @@ class HashTable {
     return this.table[index]  // 해당 인덱스에 저장된 값을 반환
   }
 
-  remove(key) {
+  remove(key) { // 주어진 키에 대응하는 값을 삭제
     const index = this.hash(key)
-    this.table[index] = undefined
+    this.table[index] = undefined // 해당 인덱스의 값을 삭제
   }
 
   display() { // 해시 테이블의 내용을 화면에 출력
