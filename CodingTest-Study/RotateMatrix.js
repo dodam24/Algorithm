@@ -17,8 +17,7 @@
 
 
 /* 
-풀이 순서
-
+풀이 순서 :
 1. Transpose (전치 행렬)
     - 왼쪽 위 -> 오른쪽 아래까지의 대각선을 중심으로, 원소들의 위치를 서로 뒤바꾼 것
     - 2중 반복문 사용
@@ -45,7 +44,7 @@ function rotateMatrix(m) {
   for(let row of m) {  // 각 행을 순회하며, 행 내부에 있는 원소들의 순서를 뒤집기
     // row.reverse();  // built-in 함수 사용 가능
     const size = row.length;  // or 직접 구현 (행의 크기를 저장)
-    for(let i=0; i < size/2; i++) {  // size/2 하는 이유: 배열을 뒤집을 때 중간 축을 중심으로 원소의 위치를 서로 바꾸기 때문에 반만 순회
+    for(let i=0; i < size/2; i++) {  // size/2 하는 이유: 배열을 뒤집을 때 중간 축을 중심으로 원소의 위치를 서로 바꾸기 때문에 절반만 순회
       let temp = row[i];
       row[i] = row[size-1-i];  // 배열의 양 끝에서부터 시작하여 중앙까지 점진적으로 양 쪽의 원소를 서로 교환
       row[size-1-i] = temp;
