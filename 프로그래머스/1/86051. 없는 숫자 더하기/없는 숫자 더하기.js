@@ -18,6 +18,4 @@ function solution(numbers) {
         
         return answer;
     }
-
-
 */
