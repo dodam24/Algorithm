@@ -1,3 +1,4 @@
+// 중첩 for문 사용
 function solution(numbers) {
     let temp = [];
     
@@ -8,4 +9,14 @@ function solution(numbers) {
     }
     // 중복 제거, 오름차순 정렬
     return [...new Set(temp)].sort((a, b) => a - b);
+}
+
+
+// flatMap() 함수를 이용
+function solution(numbers) {
+    const temp = numbers.flatMap((value, i) => {
+        return numbers.slice(i + 1).map((otherValue) => value + otherValue);
+    });
+    
+    return Array.from(new Set(temp)).sort((a, b) => a - b);
 }
