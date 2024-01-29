@@ -19,7 +19,3 @@ function solution(n, lost, reserve) {
     
     return clothes.filter(c => c > 0).length;
 }
-
-// lost, reverse 배열 가져와서 빈 배열에 담고 각 숫자를 꺼내서 숫자끼리 비교
-// reverse에서 +1 또는 -1인 숫자가 lost에 있으면 result +1
-// result의 기본값은 전체 학생 수(n) - lost.length
