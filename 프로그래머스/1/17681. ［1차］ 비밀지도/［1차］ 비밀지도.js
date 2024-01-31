@@ -8,7 +8,6 @@ function solution(n, arr1, arr2) {
     
     for(let i = 0; i < n; i++) {
         sumArr.push(String(+A[i] + +B[i]).padStart(n, 0));
-        // console.log('sumArr', sumArr)
     }
     
     // arr1과 arr2를 겹쳐서 둘 다 0이면 공백, 둘 중 하나라도 1이면 # 출력
