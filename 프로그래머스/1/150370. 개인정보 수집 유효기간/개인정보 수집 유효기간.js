@@ -1,6 +1,5 @@
 function solution(today, terms, privacies) {
-    today = new Date(today.replace(/[.]/g, "-"))
-    
+    today = new Date(today.replace(/[.]/g, "-"))    
     const objectTerms = convertArrToObj(terms)
     
     return privacies.reduce((acc, curPrivacy, idx) => {
