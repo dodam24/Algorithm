@@ -9,7 +9,6 @@ function solution(today, terms, privacies) {
     }, [])
 }
 
-
 function convertArrToObj(terms) {
     return terms.reduce((acc, term) => {
         const [type, month] = term.split(" ") 
