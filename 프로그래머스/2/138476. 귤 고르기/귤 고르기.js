@@ -17,6 +17,5 @@ function solution(k, tangerine) {
             break;
         }
     }
-    
     return answer;
 }
