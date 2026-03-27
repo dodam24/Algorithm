@@ -6,7 +6,7 @@ function solution(schedules, timelogs, startday) {
         return (Math.floor(newTime / 60) * 100 + newTime % 60)
     }
     
-    for(let i = 0; i < schedules.length; i++) {
+    for (let i = 0; i < schedules.length; i++) {
         let time = formatTime(schedules[i]);
         let valid = true;
         
